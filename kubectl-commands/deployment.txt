@@ -19,7 +19,7 @@ kubectl rollout history deployment/nginx-deploy
 kubectl rollout undo deployment/nginx-deploy
 
 -- scale up and down the application
-kubectl scale deployment nginx-deploy --replica=5
+kubectl scale deployment nginx-deploy --replicas=5
 
 -- delete deployment
 kubectl delete -f deployment.yaml
