@@ -4,7 +4,7 @@ kubectl create -f deployment.yaml
 -- get the deployment information
 kubectl get deploy -l app=nginx-app
 kubectl get rs -l app=nginx-app
-kubectl get po -l app=nginx-app
+kubectl get po -l app=nginx-app -o wide
 kubectl describe deploy nginx-deploy
 
 -- upgrade the application version
