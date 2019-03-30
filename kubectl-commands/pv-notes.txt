@@ -1,0 +1,11 @@
+Static Provisioning
+    - the disk must be created first before it can be used
+    - crate a PV object out of that disk
+    - in GCP, the disk must be created on the same zone as the cluster
+    - the PVC must match the PV
+        - storage class
+        - disk size <= to the PV
+
+Dynamic Provisioning
+    - The disk will be provisioned dynamically
+    - Need to define a StorageClass object

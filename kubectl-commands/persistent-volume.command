@@ -26,3 +26,8 @@ exit
 kubectl delete -f pod-pvc.yaml
 
 -- create the pod again then check the file
+
+---- storage class -----
+kubectl get storageClass
+kubectl describe storageClass fast
+-- default type will pd-standard (hdd)

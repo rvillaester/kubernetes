@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pv-pod
+spec:
+  containers:
+  - name: pv-container
+    image: nginx
+    volumeMounts:
+    - mountPath: /test-pv
+      name: test-pv
+  volumes:
+  - name: test-pv
+    persistentVolumeClaim:
+      claimName: gce-dynamic-claim
