@@ -7,12 +7,12 @@ spec:
   - name: redis
     image: kubernetes/redis:v1
     volumeMounts:
-    - mountPath: /redis
+    - mountPath: /redis-master
       name: config
   volumes:
   - name: config
     configMap:
-      name: redis-config
+      name: example-redis-config
       items:
       - key: redis-config
         path: redis.conf
