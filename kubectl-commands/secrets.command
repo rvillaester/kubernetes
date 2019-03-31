@@ -23,3 +23,6 @@ kubectl describe secrets [name] -o yaml
 echo -n 'admin' | base64
 -- decode secret
 echo 'cm9vdA==' | base64 --decode
+
+-- get the environment variable in a pod where the secret is exported as env variable
+kubectl exec [pod_name] env | grep [keyword]
