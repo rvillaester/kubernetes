@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis
+spec:
+  containers:
+  - name: redis
+    image: kubernetes/redis:v1
+    volumeMounts:
+    - mountPath: /redis
+      name: config
+  volumes:
+  - name: config
+    configMap:
+      name: redis-config
+      items:
+      - key: redis-config
+        path: redis.conf
