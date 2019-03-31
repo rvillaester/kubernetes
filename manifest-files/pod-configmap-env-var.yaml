@@ -4,7 +4,7 @@ metadata:
   name: cm-env-pod
 spec:
   containers:
-  - name: redis
+  - name: test
     image: kubernetes/redis:v1
     command: [ "/bin/sh", "-c", "env" ]
     env:

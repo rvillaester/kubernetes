@@ -4,7 +4,7 @@ metadata:
   name: redis
 spec:
   containers:
-  - name: redis
+  - name: test
     image: kubernetes/redis:v1
     volumeMounts:
     - mountPath: /redis
