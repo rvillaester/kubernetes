@@ -1,0 +1,2 @@
+1. If you specify the key on the configmap make sure to also specify the same key on the pod spec in volumes.configMap.items.key
+1. Key is required in volumes.configMap.items.key
