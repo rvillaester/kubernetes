@@ -1,0 +1,4 @@
+-- get the logs for a specific pod
+kubectl logs [pod_name]
+-- create a job
+kubectl create -f [yaml]
