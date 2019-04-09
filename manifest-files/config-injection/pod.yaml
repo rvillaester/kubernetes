@@ -8,7 +8,7 @@ spec:
     image: rvillaes/spring-boot-app:1.2
     volumeMounts:
     - name: application-config
-      mountPath: "/config"
+      mountPath: "/app/resources"
       readOnly: true
   volumes:
   - name: application-config
