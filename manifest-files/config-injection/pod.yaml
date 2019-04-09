@@ -13,7 +13,7 @@ spec:
   volumes:
   - name: application-config
     configMap:
-      name: spring-app-config
+      name: app-conf
       items:
       - key: application.properties
         path: application.properties
