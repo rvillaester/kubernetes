@@ -1,0 +1,1 @@
+kubectl create configmap app-prop --from-file=credential=app.properties

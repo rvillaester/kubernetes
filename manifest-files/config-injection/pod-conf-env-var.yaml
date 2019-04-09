@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: confmapL-inject
+spec:
+  containers:
+  - name: test
+    image: rvillaes/spring-boot-app:1.0
+    env:
+    - name: TEST_LITERAL
+      valueFrom:
+        configMapKeyRef:
+          name: app-prop
+          key: credential
