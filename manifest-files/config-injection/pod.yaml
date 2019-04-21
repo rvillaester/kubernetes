@@ -11,7 +11,7 @@ spec:
       mountPath: "/app/resources"
       readOnly: true
     - name: app-secret
-      mountPath: "/app/resources/application.properties"
+      mountPath: "/app/resources/secret.properties"
       readOnly: true
   volumes:
   - name: app-config
