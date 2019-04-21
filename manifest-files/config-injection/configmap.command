@@ -1,1 +1,1 @@
-kubectl create configmap spring-app-config --from-file=application.properties=application.properties
+kubectl create configmap app-conf --from-file=application.properties=application.properties
