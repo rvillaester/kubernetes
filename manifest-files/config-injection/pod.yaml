@@ -7,13 +7,19 @@ spec:
   - name: test
     image: rvillaes/spring-boot-app:1.0
     volumeMounts:
-    - name: application-config
+    - name: app-config
       mountPath: "/app/resources"
       readOnly: true
+    - name: app-secret
+      mountPath: "/app/resources/application.properties"
+      readOnly: true
   volumes:
-  - name: application-config
+  - name: app-config
     configMap:
       name: app-conf
       items:
       - key: application.properties
         path: application.properties
+  - name: app-secret
+    secret:
+      secretName: app-secret
