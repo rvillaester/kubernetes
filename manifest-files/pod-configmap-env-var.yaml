@@ -11,6 +11,6 @@ spec:
     - name: TEST_LITERAL
       valueFrom:
         configMapKeyRef:
-          name: env-conf
-          key: conf-key
+          name: pwd-secret
+          key: db-pwd
   restartPolicy: Never

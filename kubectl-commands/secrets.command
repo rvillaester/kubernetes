@@ -5,9 +5,9 @@ kubectl create secret [type] [name] [data]
 
 type can be:
     generic
-        file
+        file (--from-file)
         directory
-        literal value
+        literal value (--from-literal)
     docker registry
     tls
 
