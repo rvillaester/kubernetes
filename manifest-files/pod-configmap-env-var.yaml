@@ -4,13 +4,13 @@ metadata:
   name: cm-env-pod
 spec:
   containers:
-  - name: nginx
-    image: nginx:1.7.9
+  - name: test
+    image: kubernetes/redis:v1
     command: [ "/bin/sh", "-c", "env" ]
     env:
     - name: TEST_LITERAL
       valueFrom:
         configMapKeyRef:
-          name: pwd-secret
-          key: db-pwd
+          name: env-conf
+          key: conf-key
   restartPolicy: Never
