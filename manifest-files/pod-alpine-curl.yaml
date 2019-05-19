@@ -6,8 +6,7 @@ spec:
   containers:
   - name: alpine-curl
     image: byrnedo/alpine-curl:latest
-    command:
-      - /bin/sh
-      - "sleep 60m"
+    command: ["/bin/sh"]
+    args: ["-c", "while true; do echo hello; sleep 1000000; done"]
     imagePullPolicy: IfNotPresent
-  restartPolicy: Always
+  restartPolicy: OnFailure
