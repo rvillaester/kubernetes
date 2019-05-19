@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - name: alpine-curl
-    image: byrnedo/alpine-curl
+    image: byrnedo/alpine-curl:latest
