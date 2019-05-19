@@ -8,7 +8,6 @@ spec:
     image: byrnedo/alpine-curl:latest
     command:
       - /bin/sh
-      - "c"
       - "sleep 60m"
     imagePullPolicy: IfNotPresent
   restartPolicy: Always
