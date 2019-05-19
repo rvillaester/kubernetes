@@ -7,7 +7,7 @@ spec:
   - name: alpine-curl
     image: byrnedo/alpine-curl:latest
     command:
-      - /bin/bash
+      - /bin/sh
       - "c"
       - "sleep 60m"
     imagePullPolicy: IfNotPresent
