@@ -6,3 +6,9 @@ spec:
   containers:
   - name: alpine-curl
     image: byrnedo/alpine-curl:latest
+    command:
+      - /bin/bash
+      - "c"
+      - "sleep 60m"
+    imagePullPolicy: IfNotPresent
+  restartPolicy: Always
