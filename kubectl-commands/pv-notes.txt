@@ -1,3 +1,5 @@
+https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+
 Static Provisioning
     - the disk must be created first before it can be used
     - crate a PV object out of that disk

@@ -1,0 +1,6 @@
+nodePort port ranges from 30000 to 32767
+node IP can be found in the compute engine
+to access the app, use https://<node_ip>:<node_port>
+port is the port in the service
+targetPort is the port in the actual app in the pod
+usually, port and target port are the same

@@ -1,0 +1,4 @@
+HPA - https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough
+kubectl get hpa --watch
+kubectl get node
+kubectl get pod
